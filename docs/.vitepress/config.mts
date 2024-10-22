@@ -9,7 +9,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Origin-ID', link: 'https://id.origincloud.tech/' }
+      { text: 'Origin-ID', link: 'https://id.origincloud.tech/' },
+      { text: 'About', link: '/about' }
     ],
 
     sidebar: [
