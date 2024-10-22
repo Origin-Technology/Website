@@ -16,10 +16,10 @@ hero:
 
 features:
   - title: Origin™ XenonAuth 
-    details: detail
+    details: Authenticating your applications through our OAuth service.
   - title: Origin™ Shield
-    details: detail
+    details: Protecting your applications with heavy-duty obfuscation and encryption.
   - title: Origin™ Re-Sync
-    details: detail
+    details: Enhance your game performance and reduce screen input latency. Support OpenGL, Vulkan and DirectX.
 ---
 
