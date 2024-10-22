@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Origin Technology"
-  text: "起源科技"
+  text: "起源"
   tagline: My great project tagline
   actions:
     - theme: brand
