@@ -21,4 +21,10 @@ features:
     details: detail
   - title: Origin™ Re-Sync
     details: detail
+  - title: Origin™ Screen Protection
+    details: detail
+  - title: Origin™ Beacon
+    details: detail
+  - title: Origin™ Network
+    details: detail
 ---
