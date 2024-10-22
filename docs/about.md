@@ -82,7 +82,11 @@ If you have any questions or concerns about this Privacy Policy or the way we ha
 By using the Software, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.
 
 ### **11. Entire Agreement**  
-This Agreement constitutes the entire understanding between Licensee and Licensor with respect to the subject matters set forth herein and therein, and supersedes all prior or contemporaneous discussions, notes, memoranda, negotiations, understandings and all the documents and agreements between them relating to the same, whether written or oral. All documents, agreements, understandings and correspondence between Licensee and Licensor prior or contemporaneous to the execution of this Agreement shall, including any non-disclosure/confidentiality undertakings, become null and void automatically when this Agreement enters into effect. Licensor is not bound by any statements, representations, promises, or inducements, regardless of whether made by Licensor, an agent, or employee, unless it is set forth in this Agreement. Licensee specifically agrees that no reliance has been placed on any representations other than the provisions contained in this Agreement. This Agreement shall not be varied or amended unless so executed in writing and signed by a duly authorized representative of Licensor and Licensee.
+This Agreement constitutes the entire understanding between Licensee and Licensor with respect to the subject matters set forth herein and therein, and supersedes all prior or contemporaneous discussions, notes, memoranda, negotiations, understandings and all the documents and agreements between them relating to the same, whether written or oral. 
+
+All documents, agreements, understandings and correspondence between Licensee and Licensor prior or contemporaneous to the execution of this Agreement shall, including any non-disclosure/confidentiality undertakings, become null and void automatically when this Agreement enters into effect. Licensor is not bound by any statements, representations, promises, or inducements, regardless of whether made by Licensor, an agent, or employee, unless it is set forth in this Agreement. 
+
+Licensee specifically agrees that no reliance has been placed on any representations other than the provisions contained in this Agreement. This Agreement shall not be varied or amended unless so executed in writing and signed by a duly authorized representative of Licensor and Licensee.
 
 By installing or using the Software, you acknowledge that you have read this Agreement, understood it, and agree to be bound by its terms.
 
@@ -161,6 +165,10 @@ By installing or using the Software, you acknowledge that you have read this Agr
 使用本软件，即表示您承认您已阅读并理解本隐私政策并同意其条款。
 
 ### **11. 协议完整性**
-本协议构成被许可方与许可方之间就本协议及其中规定的主题达成的完整谅解，并取代所有先前或同期的讨论、笔记、备忘录、谈判、谅解以及他们之间与此相关的所有文件和协议，无论是书面的还是口头的。被许可方与许可方之间在执行本协议之前或同时发生的所有文件、协议、谅解和通信，包括任何保密/保密承诺，均应在本协议生效时自动失效。除非本协议另有规定，否则许可方不受任何声明、陈述、承诺或诱因的约束，无论是由许可方、代理人还是员工做出的。被许可方明确同意，除本协议中包含的条款外，未依赖任何陈述。本协议不得更改或修订，除非以书面形式签署并由许可方和被许可方的正式授权代表签署。
+本协议构成被许可方与许可方之间就本协议及其中规定的主题达成的完整谅解，并取代所有先前或同期的讨论、笔记、备忘录、谈判、谅解以及他们之间与此相关的所有文件和协议，无论是书面的还是口头的。
+
+被许可方与许可方之间在执行本协议之前或同时发生的所有文件、协议、谅解和通信，包括任何保密/保密承诺，均应在本协议生效时自动失效。除非本协议另有规定，否则许可方不受任何声明、陈述、承诺或诱因的约束，无论是由许可方、代理人还是员工做出的。
+
+被许可方明确同意，除本协议中包含的条款外，未依赖任何陈述。本协议不得更改或修订，除非以书面形式签署并由许可方和被许可方的正式授权代表签署。
 
 安装或使用本软件，即表示您承认您已阅读、理解本协议，并同意受其条款的约束。

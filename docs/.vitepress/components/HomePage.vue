@@ -6,15 +6,15 @@ const members = computed(() => [
   {
     avatar: 'https://github.com/micishere.png',
     name: 'CuteMic',
-    title: 'Team leader',
+    title: 'Owner',
     links: [
       { icon: 'github', link: 'https://github.com/micishere' },
     ],
   },
   {
     avatar: 'https://github.com/xiguajerry.png',
-    name: 'XiguaJerry',
-    title: 'Team members',
+    name: 'Xiguajerry',
+    title: 'Member',
     links: [
       { icon: 'github', link: 'https://github.com/xiguajerry' },
     ],
@@ -22,7 +22,7 @@ const members = computed(() => [
   {
     avatar: 'https://github.com/lingzhigod.png',
     name: 'Trdyun',
-    title: 'Team members',
+    title: 'Member',
     links: [{ icon: 'github', link: 'https://github.com/lingzhigod' }],
   },
 ])
