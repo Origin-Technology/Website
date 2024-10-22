@@ -4,11 +4,11 @@ layout: home
 
 hero:
   name: "Origin Technology"
-  text: "起源"
-  tagline: My great project tagline
+  text: "起源科技"
+  tagline: Innovation Team
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: View all our technologies
       link: /markdown-examples
     - theme: alt
       text: API Examples
@@ -22,4 +22,3 @@ features:
   - title: Origin™ Re-Sync
     details: detail
 ---
-

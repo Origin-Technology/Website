@@ -138,3 +138,6 @@ dist
 /node_modules
 >>>>>>> 28b4fa1 (init commit)
 >>>>>>> ffe1be4 (init commit)
+
+# VitePress cache
+docs/.vitepress/cache
