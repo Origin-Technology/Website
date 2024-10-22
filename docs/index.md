@@ -8,7 +8,7 @@ hero:
   tagline: Innovation Team
   actions:
     - theme: brand
-      text: View solutions
+      text: View all solutions
       link: /markdown-examples
 
 features:

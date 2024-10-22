@@ -9,7 +9,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       {
-        text: "Solutions",
+        text: "Products",
         items: [
           { text: "Origin™ XenonAuth", link: "/xenon-auth" },
           { text: "Origin™ Shield", link: "/shidld" },
