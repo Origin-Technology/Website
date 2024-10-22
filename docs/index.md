@@ -3,16 +3,13 @@
 layout: home
 
 hero:
-  name: "Origin Technology"
-  text: "起源科技"
+  name: "Origin"
+  text: "Technology"
   tagline: Innovation Team
   actions:
     - theme: brand
-      text: View all our technologies
+      text: View solutions
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: Origin™ XenonAuth 
