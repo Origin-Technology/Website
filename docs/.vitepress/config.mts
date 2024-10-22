@@ -25,6 +25,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Origin-Technology' }
-    ]
+    ],
+
+    footer: {
+      message: 'For support, please contact email support@origincloud.tech',
+      copyright: 'Copyright © 2023-2024 Origin Technology'
+    }
   }
 })
