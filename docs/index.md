@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: View all solutions
-      link: /markdown-examples
+      link: /all-solutions
 
 features:
   - title: Origin™ XenonAuth 

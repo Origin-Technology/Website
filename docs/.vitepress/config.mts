@@ -12,7 +12,7 @@ export default defineConfig({
         text: "Products",
         items: [
           { text: "Origin™ XenonAuth", link: "/xenon-auth" },
-          { text: "Origin™ Shield", link: "/shidld" },
+          { text: "Origin™ Shield", link: "/shield" },
           { text: "Origin™ Re-Sync", link: "/re-sync" },
         ],
       },
