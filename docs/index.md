@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Origin"
   text: "Technology"
-  tagline: Innovation Team
+  tagline: Open. Innovation. Powerful.
   actions:
     - theme: brand
       text: View all solutions
