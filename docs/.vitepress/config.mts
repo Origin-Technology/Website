@@ -9,11 +9,12 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       {
-        text: "Products",
+        text: "Productions",
         items: [
           { text: "Origin™ XenonAuth", link: "/xenon-auth" },
           { text: "Origin™ Shield", link: "/shield" },
           { text: "Origin™ Re-Sync", link: "/re-sync" },
+          { text: "Origin™ Screen Protection", link: "/screen-protection" }
         ],
       },
       { text: "Origin ID", link: "https://id.origincloud.tech/" },
@@ -22,10 +23,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Examples",
+        text: "Productions",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Origin™ XenonAuth", link: "/xenon-auth" },
+          { text: "Origin™ Shield", link: "/shield" },
+          { text: "Origin™ Re-Sync", link: "/re-sync" },
+          { text: "Origin™ Screen Protection", link: "/screen-protection" }
         ],
       },
     ],
