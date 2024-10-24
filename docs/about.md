@@ -17,6 +17,7 @@ This **End-User License Agreement** ("Agreement") is a legal agreement between *
 Subject to the terms of this Agreement, Licensor grants Licensee a limited, non-exclusive, non-transferable license to use the Software solely for personal or internal business purposes. The Licensee is prohibited from distributing, sublicensing, or transferring the Software to any third party without the prior written consent of the Licensor.
 
 ### **3. Prohibited Actions**
+
 #### **3.1. Reverse Engineering and Modification**  
 Licensee shall not, and shall not permit any third party to: reverse engineer, decompile, disassemble, modify, or create derivative works of the Software or any part thereof, without prior written consent of the Licensor. This includes any attempt to distribute or derive binaries, source code, algorithms, or other proprietary information from the Software.
 
@@ -48,6 +49,7 @@ This Agreement shall be governed by and construed in accordance with the laws of
 The final interpretation rights of this Agreement and the Software belong exclusively to the Licensor.
 
 ### **10. Privacy Policy**
+
 #### **10.1. Introduction**  
 This Privacy Policy outlines how Licensor collects, uses, and protects any information that Licensee provide or that we gather while using the Software. By using the Software, you agree to the collection and use of information in accordance with this Privacy Policy.
 
