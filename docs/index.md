@@ -6,7 +6,7 @@ hero:
   name: "Origin"
   text: "Technology"
   tagline: Open. Innovation. Powerful.
-  image: "/assets/favicon.svg"
+  image: "/favicon.svg"
   actions:
     - theme: brand
       text: View all solutions
