@@ -17,6 +17,7 @@ This **End-User License Agreement** ("Agreement") is a legal agreement between *
 Subject to the terms of this Agreement, Licensor grants Licensee a limited, non-exclusive, non-transferable license to use the Software solely for personal or internal business purposes. The Licensee is prohibited from distributing, sublicensing, or transferring the Software to any third party without the prior written consent of the Licensor.
 
 ### **3. Prohibited Actions**
+
 #### **3.1. Reverse Engineering and Modification**  
 Licensee shall not, and shall not permit any third party to: reverse engineer, decompile, disassemble, modify, or create derivative works of the Software or any part thereof, without prior written consent of the Licensor. This includes any attempt to distribute or derive binaries, source code, algorithms, or other proprietary information from the Software.
 
@@ -27,7 +28,7 @@ Licensee shall not attempt to bypass, disable, or defeat the Software's security
 Licensee shall not use the Software, or permit any third party to use the Software, for the purpose of facilitating or enabling unauthorized access, cracking, or other attempts to circumvent the protective measures of any other software that uses the Software.
 
 #### **3.4. Leaking**
-Licensee and related personnel shall not disclose the Software and any other software that uses the Software without prior written consent of the Licensor.
+Licensee and related personnel shall not disclose the Software and any other software that uses the Software to any third party without prior written consent of the Licensor.
 
 ### **4. Intellectual Property Rights**  
 The Software and all associated intellectual property rights are and shall remain the exclusive property of Licensor. This Agreement does not grant Licensee any ownership rights in the Software. All title and rights to the Software, including any updates or modifications, belong exclusively to Licensor.
@@ -48,6 +49,7 @@ This Agreement shall be governed by and construed in accordance with the laws of
 The final interpretation rights of this Agreement and the Software belong exclusively to the Licensor.
 
 ### **10. Privacy Policy**
+
 #### **10.1. Introduction**  
 This Privacy Policy outlines how Licensor collects, uses, and protects any information that Licensee provide or that we gather while using the Software. By using the Software, you agree to the collection and use of information in accordance with this Privacy Policy.
 
@@ -110,7 +112,7 @@ By installing or using the Software, you acknowledge that you have read this Agr
 被许可方不得使用软件或允许任何第三方使用软件，以促进或实现未经授权的访问、破解或以其他方式尝试规避使用该软件的任何其他软件的保护措施。
 
 #### **3.4. 泄露**
-未经许可方事先书面允许，被许可方和有关人员不得泄露软件和其他任何使用了该软件的软件。
+未经许可方事先书面允许，被许可方和有关人员不得向任何第三方泄露软件和其他任何使用了该软件的软件。
 
 ### **4. 知识产权**
 本软件和所有相关知识产权是许可方的专有财产。本协议不授予被许可人对软件的任何所有权。本软件的所有所有权和权利（包括任何更新或修改）均完全属于许可方。
