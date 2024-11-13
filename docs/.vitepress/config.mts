@@ -5,7 +5,7 @@ export default defineConfig({
   title: "Origin Technology",
   description: "A VitePress Site",
   themeConfig: {
-    logo: '/favicon.svg',
+    logo: '/icon.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
