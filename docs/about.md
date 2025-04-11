@@ -4,7 +4,7 @@ outline: deep
 
 # About
 
-Copyright © 2022-2025 OriginTechnology.
+Copyright © 2022-2025 Origin Technology.
 
 # Overall End-User License Agreement (EULA), OriginID End-User License Agreement
 
