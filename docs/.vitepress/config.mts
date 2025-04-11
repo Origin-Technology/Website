@@ -40,7 +40,7 @@ export default defineConfig({
 
     footer: {
       message: "For support, please contact email support@origin.pw",
-      copyright: "Copyright © 2023-2025 Origin Technology",
+      copyright: "Copyright © 2022-2025 Origin Technology",
     },
   },
 });
