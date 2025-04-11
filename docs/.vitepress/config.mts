@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Origin Technology",
-  description: "A VitePress Site",
+  description: "Open. Innovation. Powerful.",
   themeConfig: {
     logo: '/icon.png',
     // https://vitepress.dev/reference/default-theme-config
@@ -18,7 +18,7 @@ export default defineConfig({
           { text: "Origin™ Screen Protection", link: "/screen-protection" }
         ],
       },
-      { text: "Origin ID", link: "https://id.origincloud.tech/" },
+      { text: "Origin ID", link: "https://id.origin.pw" },
       { text: "About", link: "/about" },
     ],
 
@@ -39,8 +39,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: "For support, please contact email support@origincloud.tech",
-      copyright: "Copyright © 2023-2024 Origin Technology",
+      message: "For support, please contact email support@origin.pw",
+      copyright: "Copyright © 2023-2025 Origin Technology",
     },
   },
 });
