@@ -11,7 +11,7 @@ Copyright © 2022-2025 Origin Technology.
 ## Overall End-User License Agreement (EULA)
 
 ### **1. Introduction**  
-This **End-User License Agreement** ("Agreement") is a legal agreement between **you** ("Licensee") and **OriginTechnology**("Licensor") for the use of all productions developed or provided by the Licensor (e.g. **Origin™ Shield**) ("Software"). Licensee must be at least the legal age of 12 years or older. By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.
+This **End-User License Agreement** ("Agreement") is a legal agreement between **you** ("Licensee") and **Origin Technology**("Licensor") for the use of all productions developed or provided by the Licensor (e.g. **Origin™ Shield**) ("Software"). Licensee must be at least the legal age of 12 years or older. By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.
 
 ### **2. License Grant**  
 Subject to the terms of this Agreement, Licensor grants Licensee a limited, non-exclusive, non-transferable license to use the Software solely for personal or internal business purposes. The Licensee is prohibited from distributing, sublicensing, or transferring the Software to any third party without the prior written consent of the Licensor.
@@ -137,6 +137,6 @@ The Licensor reserves the right to modify or update this Agreement at any time. 
 The final interpretation rights of this Agreement and the Software belong exclusively to the Licensor.
 
 ### **9. Contact Information**
-If you have any questions or concerns about this Agreement, please [contact us](mailto:support@origincloud.tech).
+If you have any questions or concerns about this Agreement, please [contact us](mailto:support@origin.pw).
 
 By using the Platform, you acknowledge that you have read, understood, and agree to be bound by this End User License Agreement.
