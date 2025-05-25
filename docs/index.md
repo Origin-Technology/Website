@@ -13,16 +13,16 @@ hero:
       link: /all-solutions
 
 features:
-  - title: Origin™ XenonAuth 
-    details: Authenticate your applications through our OAuth service.
-  - title: Origin™ Shield
-    details: Protect your applications with heavy-duty obfuscation and encryption.
-  - title: Origin™ Re-Sync
+  - title: Origin XenonAuth™
+    details: Provide authentication for your application through our OAuth service.
+  - title: Origin Shield™
+    details: Protect your applications with Origin Solide™ technology with multiple security checks.
+  - title: Origin Re-Sync™
     details: Enhance your game performance and reduce screen input latency. Supports OpenGL, Vulkan and DirectX.
-  - title: Origin™ Screen Protection
-    details: Stop malware from capturing your gameplay.
-  - title: Origin™ Beacon
-    details: One-stop user information collection and analysis platform.
-  - title: Origin™ Network
-    details: Connect your applications via united web interfaces to enhance cooperations.
+  - title: Origin Solide™
+    details: Protect your JVM application with lightweight or heavy-duty obfuscation features.
+  - title: Origin Beacon™
+    details: Powerful, secure and stable multi-dimensional user data collection services
+  - title: Origin Network™
+    details: All of our cloud services are powered by Origin Cloud and its powerful network service partners.
 ---
