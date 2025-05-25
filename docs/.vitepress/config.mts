@@ -12,10 +12,10 @@ export default defineConfig({
       {
         text: "Productions",
         items: [
-          { text: "Origin™ XenonAuth", link: "/xenon-auth" },
-          { text: "Origin™ Shield", link: "/shield" },
-          { text: "Origin™ Re-Sync", link: "/re-sync" },
-          { text: "Origin™ Screen Protection", link: "/screen-protection" }
+          { text: "Origin XenonAuth™", link: "/xenon-auth" },
+          { text: "Origin Shield™", link: "/shield" },
+          { text: "Origin Re-Sync™", link: "/re-sync" },
+          { text: "Origin Solide™", link: "https://solide.origin.pw/" }
         ],
       },
       { text: "Origin ID", link: "https://id.origin.pw" },
@@ -26,10 +26,10 @@ export default defineConfig({
       {
         text: "Productions",
         items: [
-          { text: "Origin™ XenonAuth", link: "/xenon-auth" },
-          { text: "Origin™ Shield", link: "/shield" },
-          { text: "Origin™ Re-Sync", link: "/re-sync" },
-          { text: "Origin™ Screen Protection", link: "/screen-protection" }
+          { text: "Origin XenonAuth™", link: "/xenon-auth" },
+          { text: "Origin Shield™", link: "/shield" },
+          { text: "Origin Re-Sync™", link: "/re-sync" },
+          { text: "Origin Solide™", link: "https://solide.origin.pw/" }
         ],
       },
     ],
