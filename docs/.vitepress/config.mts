@@ -20,7 +20,13 @@ export default defineConfig({
       },
       { text: "Origin ID", link: "https://id.origin.pw" },
       { text: "About", link: "/about" },
-      { text: "QQ群聊", link: "https://qm.qq.com/q/Dew7WKxByo"}
+      {
+        text: "Contact Us",
+        items: [
+          { text: "QQ群聊", link: "https://qm.qq.com/q/Dew7WKxByo" },
+          { text: "EMail", link: "mailto:support@origin.pw" }
+        ],
+      }
     ],
 
     sidebar: [
