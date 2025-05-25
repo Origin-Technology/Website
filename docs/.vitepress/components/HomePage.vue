@@ -6,7 +6,7 @@ const members = computed(() => [
   {
     avatar: 'https://github.com/micishere.png',
     name: 'CuteMic',
-    title: 'Owner',
+    title: 'Leader',
     links: [
       { icon: 'github', link: 'https://github.com/micishere' },
     ],
