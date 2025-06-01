@@ -19,8 +19,8 @@ export default defineConfig({
         ],
       },
       { text: "Origin ID", link: "https://id.origin.pw" },
-      { text: "About", link: "/about" },
       { text: "Status", link: "https://status.origin.pw" },
+      { text: "About", link: "/about" },
       {
         text: "Contact Us",
         items: [
