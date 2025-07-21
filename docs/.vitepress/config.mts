@@ -19,6 +19,7 @@ export default defineConfig({
         ],
       },
       { text: "Origin ID", link: "https://id.origin.pw" },
+      { text: "Origin Developer", link: "https://dev.origin.pw" },
       { text: "Status", link: "https://status.origin.pw" },
       { text: "About", link: "/about" },
       {
