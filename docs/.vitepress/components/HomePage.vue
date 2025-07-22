@@ -25,6 +25,12 @@ const members = computed(() => [
     title: 'Member',
     links: [{ icon: 'github', link: 'https://github.com/lingzhigod' }],
   },
+  {
+    avatar: 'https://github.com/jiyun233.png',
+    name: 'jiyun233',
+    title: 'Member',
+    links: [{ icon: 'github', link: 'https://github.com/jiyun233' }],
+  },
 ])
 </script>
 
