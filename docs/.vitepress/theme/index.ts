@@ -3,6 +3,8 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
+import './custom.css'
+import AnnouncementBanner from "../components/AnnouncementBanner.vue";
 
 import Layout from "./Layout.vue";
 
@@ -12,6 +14,6 @@ export default {
     return h(Layout);
   },
   enhanceApp({ app }) {
-    app.component;
+    app.component('AnnouncementBanner', AnnouncementBanner);
   },
 } satisfies Theme;

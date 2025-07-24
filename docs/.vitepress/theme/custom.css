@@ -1,0 +1,6 @@
+/* 确保导航栏在公告横条下方 */
+.VPNav {
+    position: relative;
+    z-index: 999; /* 低于公告横条，但高于页面内容 */
+    transition: margin-top 0.3s ease;
+}

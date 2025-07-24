@@ -3,6 +3,7 @@ import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { nextTick, provide } from "vue";
 import HomePage from "../components/HomePage.vue";
+import AnnouncementBanner from "../components/AnnouncementBanner.vue";
 
 const { isDark } = useData();
 
@@ -41,6 +42,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
+  <AnnouncementBanner type="emergency">Origin 近期正在积极维护大多数业务，可能导致服务不稳定，敬请谅解。 We are actively maintaining most of our businesses recently, which may cause service instability. Please understand.</AnnouncementBanner>
   <DefaultTheme.Layout>
     <template #home-features-after>
       <HomePage />
