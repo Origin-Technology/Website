@@ -2,141 +2,161 @@
 outline: deep
 ---
 
-# About
+# Origin Technology 用户使用协议
 
-Copyright © 2022-2025 Origin Technology.
+本协议适用于任何使用 Origin Technology 所提供服务的民事主体，以及采用 Origin Technology 技术的软件的使用者。本协议共分为四个部分，分别规定了使用过程中双方应当遵守的行为规范。若本协议中的部分内容与中华人民共和国现行法律法规冲突，协议将在法律允许的最大范围内生效。
 
-# Overall End-User License Agreement (EULA), OriginID End-User License Agreement
+---
 
-## Overall End-User License Agreement (EULA)
+第一部分：主许可协议
 
-### **1. Introduction**  
-This **End-User License Agreement** ("Agreement") is a legal agreement between **you** ("Licensee") and **Origin Technology**("Licensor") for the use of all productions developed or provided by the Licensor (e.g. **Origin™ Shield**) ("Software"). Licensee must be at least the legal age of 12 years or older. By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.
+一. 引言
+本协议系许可方（ Origin 团队及其成员，以下简称"许可方"）与被许可方（以下简称"用户"）就许可方提供的所有产品（包括但不限于 Origin™ Shield 软件系统）的使用达成的法律协议。用户须为完全民事行为能力人或依法设立的组织。用户安装、复制或使用本软件即视为接受本协议全部条款。未满十八周岁的未成年人，请和监护人一同阅读本协议。当您开始使用我们的服务和产品时，我们将视为您和您的监护人已经同意《Origin Technology 用户使用协议》。
 
-### **2. License Grant**  
-Subject to the terms of this Agreement, Licensor grants Licensee a limited, non-exclusive, non-transferable license to use the Software solely for personal or internal business purposes. The Licensee is prohibited from distributing, sublicensing, or transferring the Software to any third party without the prior written consent of the Licensor.
+二. 许可授予
+许可方依本协议条款授予用户：（1）非独占的；（2）不可转让的；（3）有限的使用许可。
+用户仅可在符合本协议规定的条件下将软件用于个人或内部组织用途。未经许可方书面授权，用户不得以任何方式向第三方提供软件副本、进行分许可或转让许可权益。
 
-### **3. Prohibited Actions**
+三. 禁止行为
 
-#### **3.1. Reverse Engineering and Modification**  
-Licensee shall not, and shall not permit any third party to: reverse engineer, decompile, disassemble, modify, or create derivative works of the Software or any part thereof, without prior written consent of the Licensor. This includes any attempt to distribute or derive binaries, source code, algorithms, or other proprietary information from the Software.
+在使用许可方提供的服务时，未经许可方书面同意，用户不得实施以下行为：
 
-#### **3.2. Cracking and Circumvention**  
-Licensee shall not attempt to bypass, disable, or defeat the Software's security mechanisms, including but not limited to license verification, obfuscation, or any protective features incorporated by Licensor.
+1. 对软件进行逆向工程：（a）对软件进行逆向工程、反编译、反汇编或任何解密行为；（b）修改软件源代码或二进制代码；（c）创建衍生作品；（d）通过任何技术手段提取软件算法或技术方案；（e）传播软件技术细节。
+2. 干扰软件的安全机制保护：（a）规避软件的许可验证机制；（b）破坏软件的代码混淆技术；（c）干扰软件的数字版权管理功能；（d）破解软件的任何保护性技术措施。
+3. 侵权协助：（a）为破解其他软件提供技术工具；（b）创建盗版分发平台；（c）实施反向代理等规避技术；（d）其他利用软件实施或协助实施任何侵犯他人知识产权的行为。
+4. 违反保密义务：向任何第三方披露软件技术细节、架构设计、保护机制等商业秘密。
 
-#### **3.3. Assisting Cracking**  
-Licensee shall not use the Software, or permit any third party to use the Software, for the purpose of facilitating or enabling unauthorized access, cracking, or other attempts to circumvent the protective measures of any other software that uses the Software.
+四. 知识产权
 
-#### **3.4. Leaking**
-Licensee and related personnel shall not disclose the Software and any other software that uses the Software to any third party without prior written consent of the Licensor.
+软件及其衍生作品的全部知识产权归许可方所有。本协议不授予用户任何知识产权所有权。许可方保留所有权利，包括但不限于：（a）专利权；（b）著作权；（c）商业秘密；（d）商标权；（e）技术方案。
 
-### **4. Intellectual Property Rights**  
-The Software and all associated intellectual property rights are and shall remain the exclusive property of Licensor. This Agreement does not grant Licensee any ownership rights in the Software. All title and rights to the Software, including any updates or modifications, belong exclusively to Licensor.
+五. 协议终止
 
-### **5. Termination**  
-Licensor may terminate this Agreement immediately if Licensee fails to comply with or violate any of its terms. Upon termination, Licensee must immediately cease all use of the Software and destroy all copies of the Software in their possession.
+出现下列情形时，许可方有权立即终止协议：
+（a）用户违反协议条款；
+（b）用户实施侵权行为；
+（c）用户违反其行为实施时中华人民共和国实行的任何法律法规。
 
-### **6. Disclaimer of Warranties**  
-The Software is provided "as is" without warranty of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+协议终止后，用户须立即停止使用并销毁所有软件副本，且不得保留任何备份。许可方有权利采取措施禁止用户在其计算机继续运行相关软件产品。
 
-### **7. Limitation of Liability**  
-In no event shall Licensor be liable for any damages (including, without limitation, lost profits, business interruption, or lost information) arising out of the use of or inability to use the Software, even if Licensor has been advised of the possibility of such damages.
+六. 免责声明
 
-### **8. Governing Law**  
-This Agreement shall be governed by and construed in accordance with the laws of The People's Republic of China. Any disputes arising out of this Agreement shall be resolved in the courts of The People's Republic of China.
+除许可方另有书面承诺，许可方不对软件作任何明示或暗示的担保，包括但不限于：（a）适销性担保；（b）特定用途适用性担保；（c）不侵权担保。
 
-### **9. Final Interpretation Rights**
-The final interpretation rights of this Agreement and the Software belong exclusively to the Licensor.
+软件运行风险由用户自行承担，许可方不保证软件：（a）绝对安全；（b）无错误；（c）持续可用。
 
-### **10. Privacy Policy**
+七. 责任限制
 
-#### **10.1. Introduction**  
-This Privacy Policy outlines how Licensor collects, uses, and protects any information that Licensee provide or that we gather while using the Software. By using the Software, you agree to the collection and use of information in accordance with this Privacy Policy.
+根据《民法典》第五百零六条，许可方对下列情形不承担责任：（a）不可抗力导致的损失；（b）用户不当使用导致的损害；（c）第三方服务中断；（d）用户设备配置问题；（e）用户数据丢失。
 
-#### **10.2. Information Collection**  
-While using the Software, Licensor may collect certain data, including but not limited to:
-  - Device information (e.g., device model, operating system, hardware specifications)
-  - Network information (e.g., IP address, internet service provider)
-  - Usage data (e.g., features used, frequency of use, crash reports)
+许可方对间接损失的赔偿责任不超过用户实际支付的许可费用总额。
 
-#### **10.3. Purpose of Data Collection**  
-Licensor collects this information for the following purposes:
-  - To ensure the proper functioning of the Software
-  - To analyze and improve the Software's features and performance
-  - To provide technical support and respond to user inquiries
-  - To maintain the security and integrity of the Software
+八. 争议解决
 
-#### **10.4. Data Security**  
-Licensor is committed to ensuring that any data collected is kept strictly confidential and secure. Licensor uses a variety of security measures to protect your data against unauthorized access, alteration, or disclosure. Only authorized personnel have access to this information, and Licensor takes all reasonable steps to ensure the safety of the data collected.
+因本协议产生的任何争议，双方同意提交哈尔滨仲裁委员会按照其现行仲裁规则进行仲裁。仲裁裁决为终局决定，对双方具有约束力。
 
-#### **10.5. Data Sharing**  
-Licensor does not and shall not sell, lease, or otherwise distribute your personal information to third parties unless required by law or with Licensee's explicit(written or oral) consent.
+九. 法律适用
 
-#### **10.6. Your Rights**  
-Licensee has the right to update any information Licensor collectes.
+本协议适用中华人民共和国法律，特别援引以下法律依据：
+（a）《计算机软件保护条例》；
+（b）《网络安全法》；
+（c）《数据安全法》；
+（d）《个人信息保护法》；
+（e）《民法典》合同编。
 
-#### **10.7. Changes to This Privacy Policy**  
-We may update this Privacy Policy from time to time. Any changes will be posted within the Software, and it is your responsibility to review this Policy periodically. Your continued use of the Software after any changes indicates your acceptance of the new terms.
+---
 
-#### **10.8. Contact Information**  
-If you have any questions or concerns about this Privacy Policy or the way we handle your data, please [contact us](mailto:support@origincloud.tech).
+第二部分：隐私政策及特别条款
 
-By using the Software, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.
+一. 数据收集范围及收集原因
 
-### **11. Entire Agreement**  
-This Agreement constitutes the entire understanding between Licensee and Licensor with respect to the subject matters set forth herein and therein, and supersedes all prior or contemporaneous discussions, notes, memoranda, negotiations, understandings and all the documents and agreements between them relating to the same, whether written or oral. 
+为保证我们正常向您提供服务，我们将会收集您的以下信息：
 
-All documents, agreements, understandings and correspondence between Licensee and Licensor prior or contemporaneous to the execution of this Agreement shall, including any non-disclosure/confidentiality undertakings, become null and void automatically when this Agreement enters into effect. Licensor is not bound by any statements, representations, promises, or inducements, regardless of whether made by Licensor, an agent, or employee, unless it is set forth in this Agreement. 
+计算机唯一标识（用于反盗版和软件所有权验证，检测恶意破解工具、阻断攻击行为）：
 
-Licensee specifically agrees that no reliance has been placed on any representations other than the provisions contained in this Agreement. This Agreement (except [10. Privacy Policy](#10-privacy-policy)) shall not be varied or amended unless so executed in writing and signed by a duly authorized representative of Licensor and Licensee.
+硬件信息：设备型号、序列号、主板编号、硬盘UUID、MAC地址（如适用）；
 
-By installing or using the Software, you acknowledge that you have read this Agreement, understood it, and agree to be bound by its terms.
+软件信息：操作系统版本、BIOS版本、虚拟机标识（如VMware/Hyper-V）；
 
+运行环境：软件安装路径、进程列表、防病毒软件状态。
 
-## OriginID End-User License Agreement
+网络信息（用于基本网络通信）：
 
-This **End User License Agreement** ("Agreement") is a legal agreement between **you** ("Licensee" or "you") and **OriginTech** ("Licensor", "we", "us", or "our") governing your use of the **OriginID** account and corresponding OAuth authentication platform ("Platform"). By accessing or using the Platform, you agree to be bound by the terms of this Agreement as well as [Overall End-User License Agreement](#overall-end-user-license-agreement-eula).
+连接数据：IP地址（含IPv4/IPv6）、DNS配置、网关信息、网络延迟；
 
-### **1. Account Ownership and Usage**
-#### **1.1. Account Ownership**
-The account provided to you by the Platform is for your personal or organizational use only. You are responsible for maintaining the confidentiality of your account credentials, including but not limited to your username, password, and OAuth tokens.
+通信行为：软件更新请求日志、反盗版验证交互记录；
 
-#### **1.2. Prohibition of Sharing, Transfer, or Sale**
-You agrees that you will not share, transfer, sell, or otherwise allow any third party to access or use your account. Each account is intended for use by a single individual or entity, and any unauthorized sharing or transfer of accounts is strictly prohibited.
+地理位置：基于IP的粗略地理位置（精确到省级行政区）。
 
-### **2. Prohibited Activities**
-#### **2.1. Reverse Engineering and Attacks**
-You agree not to engage in any activity that compromises the security, integrity, or functionality of the Platform. This includes, but is not limited to:
-   - Reverse engineering, decompiling, disassembling, or otherwise attempting to derive the source code of the Platform.
-   - Attempting to bypass, disable, or circumvent any security or authentication mechanisms.
-   - Launching any form of attack, including but not limited to denial-of-service (DoS) attacks, brute force attacks, or any other malicious activity aimed at disrupting the Platform.
+技术日志（用于软件维护，分析兼容性问题、改进软件性能。）：
 
-#### **2.2. Compliance with Laws**
-You agree to use the Platform in compliance with all applicable laws, regulations, and third-party rights. You must not use the Platform for any illegal or unauthorized purpose.
+操作记录：软件启动/关闭时间、功能模块调用频率；
 
-### **3. Termination**
-#### **3.1. Violation of Terms**
-If you violate any of the terms of this Agreement, the Licensor reserves the right to suspend or terminate your access to the Platform immediately, without prior notice or liability.
+错误日志：崩溃报告、硬件兼容性错误代码。
 
-#### **3.2. Effect of Termination**
-Upon termination, you must cease all use of the Platform and delete any copies of related materials and applications in your possession. The Licensor may also revoke any OAuth tokens or credentials associated with your account.
+我们在收集您的信息时，将会遵循最小的必要原则。在通常情况下，在您注销服务后，我们保存您数据的最长时间不超过六个月，但因违反用户协议而被封禁的除外。许可方基于法律所规定的安全防护义务，通过设备指纹技术对计算机唯一标识符（包括但不限于主板序列号、硬盘UUID、网卡MAC地址）进行哈希运算生成不可逆的数字特征值，作为服务许可状态的识别依据。
 
-### **4. Disclaimer of Warranties**
-The Platform is provided "as is" and "as available," without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. The Licensor does not guarantee that the Platform will be error-free, secure, or uninterrupted.
+二. 数据处理
 
-### **5. Limitation of Liability**
-To the fullest extent permitted by law, the Licensor shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising out of or related to your use of the Platform.
+许可方可能采取以下技术措施保证服务的正常提供：（a）通过加密技术处理数据；（b）采用数字水印技术保护知识产权；（c）实施访问控制机制；（d）进行行为日志记录。
 
-### **6. Governing Law**
-This Agreement shall be governed by and construed in accordance with the laws of The People's Republic of China, without regard to its conflict of law principles.
+三. 数据安全
 
-### **7. Amendments**
-The Licensor reserves the right to modify or update this Agreement at any time. Any changes will be effective upon posting the revised Agreement on the Platform. Your continued use of the Platform after such changes constitutes your acceptance of the revised Agreement.
+许可方采取以下保护措施保护收集的用户数据：（a）最小必要原则的数据处理；（b）加密存储与传输。
 
-### **8. Final Interpretation Rights**
-The final interpretation rights of this Agreement and the Software belong exclusively to the Licensor.
+四. 关于违约的特殊处理
 
-### **9. Contact Information**
-If you have any questions or concerns about this Agreement, please [contact us](mailto:support@origin.pw).
+当您违反我们与您商定的协议时，许可方有权采取措施，从上述收集的数据中保留能用于标识用户唯一身份的部分，并据此作为识别用户的依据。
 
-By using the Platform, you acknowledge that you have read, understood, and agree to be bound by this End User License Agreement.
+五. 数据共享
+
+通常情况下，许可方不会向第三方共享您的数据内容，当我们需要向第三方共享您的信息时，我们会通过在醒目位置弹窗或发送电子邮件等措施征集您的许可。
+
+---
+
+第三部分：Origin ID 许可条款
+
+一. 账户管理
+
+1. 账户所有权
+   Origin ID 账户归许可方所有，用户仅享有非独占的使用许可。用户须自行采取以下安全措施：（a）设置强密码；（b）启用二次验证；（c）定期更新认证信息。
+2. 账户使用过程中，用户不得实施以下行为：（a）共享账户凭证；（b）出租或出借账户；（c）批量生成虚拟账户；（d）通过自动化工具操控账户。
+3. 用户在使用账户的过程中，用户不得：
+   （a）实施网络渗透测试；（b）进行协议逆向分析；（c）干扰认证服务运行。
+4. 用户须确保使用目的符合：
+   （a）《网络安全法》；（b）《数据安全法》；（c）《个人信息保护法》；（d）其他任何中华人民共和国现行的法律法规。
+
+二. 终止条款
+
+1. 违约处理
+
+   许可方有权采取以下措施：（a）暂停账户访问；（b）冻结认证令牌；（c）注销违规账户；（d）采取必要措施识别用户确保其无法再次使用账户；（e）追溯侵权责任。
+
+2. 法律责任
+   账户终止不影响许可方依法追究用户侵权责任的权利。
+
+---
+
+第四部分：特别提示条款
+
+一. 技术保护措施
+
+根据《计算机软件保护条例》第十七条，许可方依法采用技术保护措施，用户不得规避或破坏这些措施。
+
+二. 数据主权声明
+
+依据《数据安全法》第三十六条，许可方承诺配合中国司法机关依法调取数据，但不向境外机构直接提供数据。
+
+三. 合规性承诺
+
+用户承诺：（a）不将软件用于军事用途；（b）不将我们的服务用于违反社会公序良俗的活动；（c）不将我们的服务用于违反中华人民共和国现行的任何法律法规的活动。
+
+四. 生效条件
+
+本协议自用户首次使用软件时生效，有效期与软件著作权保护期相同。协议终止后，用户仍应遵守保密义务及知识产权条款。
+
+五. 本协议的修订程序
+
+协议修订需符合以下程序：
+（a）通过软件更新机制推送修订文本；
+（b）用户继续使用视为接受修订。
