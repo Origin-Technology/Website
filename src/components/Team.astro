@@ -1,0 +1,51 @@
+---
+import { team } from '../data/content';
+---
+
+<section id="team" class="blueprint relative overflow-hidden bg-white py-24">
+  <div class="container-x relative z-10">
+    <div class="mx-auto mb-12 max-w-[620px] text-center" data-reveal>
+      <p class="eyebrow" data-i18n="team.eyebrow">About</p>
+      <h2 class="h2 mt-3" data-i18n="team.title">Our team</h2>
+      <p class="lead mx-auto mt-4" data-i18n="team.lead">Say hello to our awesome team.</p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4" data-reveal-group>
+      {
+        team.map((m) => (
+          <article
+            class="w-[calc(50%-0.5rem)] min-w-[160px] max-w-[220px] rounded-2xl border border-gray-200 bg-white p-7 text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] sm:w-[220px]"
+          >
+            <a href={`https://github.com/${m.github}`} target="_blank" rel="noreferrer" class="mx-auto mb-4 block h-18 w-18">
+              <img
+                src={`https://github.com/${m.github}.png?size=160`}
+                alt={`${m.name} GitHub avatar`}
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full rounded-full border border-gray-200 object-cover"
+              />
+            </a>
+            <div class="text-[17px] font-bold text-ink">{m.name}</div>
+            <div
+              class={
+                'mt-1 text-[14px] ' +
+                (m.role === 'Leader' ? 'font-semibold text-flare' : 'text-gray-500')
+              }
+              data-i18n={`team.roles.${m.role.toLowerCase()}`}
+            >
+              {m.role}
+            </div>
+            <a
+              href={`https://github.com/${m.github}`}
+              target="_blank"
+              rel="noreferrer"
+              class="mt-1 block text-[13px] text-gray-500 transition hover:text-flare"
+            >
+              @{m.github}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

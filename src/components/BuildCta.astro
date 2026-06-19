@@ -1,0 +1,91 @@
+---
+import {
+  KeyRound,
+  ShieldCheck,
+  Zap,
+  Boxes,
+  Radio,
+  Globe,
+  ArrowRight,
+} from 'lucide-react';
+
+// floating tiles scattered around the card (Cloudflare style)
+const tiles = [
+  { icon: KeyRound, top: '16%', left: '8%', r: '-12deg' },
+  { icon: ShieldCheck, top: '60%', left: '5%', r: '8deg' },
+  { icon: Zap, top: '12%', left: '88%', r: '10deg' },
+  { icon: Boxes, top: '64%', left: '90%', r: '-9deg' },
+  { icon: Radio, top: '78%', left: '24%', r: '6deg' },
+  { icon: Globe, top: '74%', left: '72%', r: '-7deg' },
+];
+
+const strip = [
+  'Authentication that drops into any app',
+  'Layered protection from bytecode to runtime',
+  'Lower input latency on OpenGL · Vulkan · DirectX',
+  'Built on Origin Cloud',
+];
+
+const marqueeCopies = [0, 1];
+---
+
+<section class="blueprint relative overflow-hidden bg-white py-10">
+  <div class="container-x relative z-10">
+    <div class="flare-card flare-card-texture flare-card-glow px-6 py-24 text-center sm:px-10">
+      <!-- floating tiles -->
+      {
+        tiles.map((t) => (
+          <div
+            class="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2"
+            style={`top:${t.top};left:${t.left}`}
+          >
+            <div
+              class="grid h-12 w-12 place-items-center rounded-xl border border-white/30 text-white/70"
+              style={`transform:rotate(${t.r})`}
+              data-float
+              data-float-dist="12"
+              data-float-rot="4"
+            >
+              <t.icon size={22} />
+            </div>
+          </div>
+        ))
+      }
+
+      <div class="relative z-10 mx-auto max-w-[640px]">
+        <h2 class="text-[clamp(32px,4.6vw,52px)] font-extrabold tracking-[-0.03em] text-white" data-i18n="build.title">
+          Build without boundaries
+        </h2>
+        <p class="mx-auto mt-5 max-w-[520px] text-[18px] leading-relaxed text-white/90" data-i18n="build.lead">
+          Join developers who ship faster on Origin — authenticate, protect, and
+          accelerate from one platform.
+        </p>
+        <div class="mt-9 flex flex-wrap justify-center gap-3.5">
+          <a class="btn btn-white" href="#products">
+            <span data-i18n="build.cta.start">Start building for free</span>
+            <ArrowRight size={18} />
+          </a>
+          <a class="btn btn-outline-light" href="mailto:support@origin.pw" data-i18n="build.cta.contact">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scrolling value-prop strip -->
+  <div class="marquee relative z-10 mt-6 border-y border-gray-200 py-4" style="--marquee-duration:30s;--marquee-gap:2.5rem">
+    <div class="marquee-track">
+      {
+        marqueeCopies.map((copyIndex) => (
+          <ul class="marquee-set" aria-hidden={copyIndex > 0}>
+            {strip.map((s, stripIndex) => (
+              <li class="flex items-center gap-3 whitespace-nowrap text-[14px] font-medium text-gray-600">
+                <span class="h-1.5 w-1.5 rounded-full bg-flare"></span>
+                <span data-i18n={`build.strip.${stripIndex}`}>{s}</span>
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+</section>

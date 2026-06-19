@@ -1,0 +1,92 @@
+---
+import Globe from './react/Globe.tsx';
+import {
+  ShieldCheck,
+  User,
+  Database,
+  KeyRound,
+  Globe as GlobeIcon,
+  MapPin,
+  ScanLine,
+} from 'lucide-react';
+
+const features = [
+  {
+    key: 'everywhere',
+    icon: GlobeIcon,
+    title: 'Run everywhere',
+    body: 'Authentication, protection, and acceleration run across our global edge — close to your users, close to your data.',
+  },
+  {
+    key: 'anywhere',
+    icon: MapPin,
+    title: 'Run anywhere',
+    body: 'Origin Network™ optimizes traffic from source to destination, so every request takes the fastest safe path.',
+  },
+  {
+    key: 'scale',
+    icon: ScanLine,
+    title: 'Run at massive scale',
+    body: 'Built on Origin Cloud. No capacity planning — services scale with your traffic, not your ops team.',
+  },
+];
+
+const nodes = [
+  { icon: Database, top: '8%', left: '40%' },
+  { icon: User, top: '4%', left: '64%' },
+  { icon: ShieldCheck, top: '40%', left: '20%' },
+  { icon: KeyRound, top: '58%', left: '78%' },
+  { icon: User, top: '30%', left: '88%' },
+];
+---
+
+<section class="blueprint relative overflow-hidden bg-white pt-24 pb-20">
+  <div class="container-x relative z-10 text-center" data-reveal>
+    <h2 class="h2" data-i18n="globe.title">Region: Earth</h2>
+    <p class="lead mx-auto mt-4 max-w-[560px]" data-i18n="globe.lead">
+      One smart network for protection + performance — close to users, close to data.
+    </p>
+  </div>
+
+  <div class="relative z-10 mx-auto mt-6 aspect-[1.4/1] w-full max-w-[720px]" data-pop-group>
+    <Globe client:visible />
+
+    {
+      nodes.map((n) => (
+        <div
+          class="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2"
+          style={`top:${n.top};left:${n.left}`}
+          data-pop
+        >
+          <div
+            class="grid h-10 w-10 place-items-center rounded-full border border-flare/30 bg-white text-flare shadow-[var(--shadow-soft)]"
+            data-float
+            data-float-dist="6"
+            data-float-rot="0"
+          >
+            <n.icon size={18} />
+          </div>
+        </div>
+      ))
+    }
+
+    <div class="absolute bottom-[14%] left-[6%] rounded-lg border border-flare/40 bg-white/95 px-4 py-2.5 shadow-[var(--shadow-soft)]" data-pop>
+      <div class="text-[20px] font-extrabold leading-none text-ink" data-count="24" data-count-suffix="/7">24/7</div>
+      <div class="mt-1 text-[12.5px] text-gray-500" data-i18n="globe.availability">Origin Cloud availability.</div>
+    </div>
+  </div>
+
+  <div class="container-x relative z-10 mt-10">
+    <div class="grid divide-y divide-gray-200 border-y border-gray-200 md:grid-cols-3 md:divide-x md:divide-y-0" data-reveal-group>
+      {
+        features.map((f) => (
+          <div class="px-7 py-9">
+            <f.icon size={26} className="text-ink" />
+            <h3 class="mt-5 text-[18px] font-bold text-ink" data-i18n={`globe.features.${f.key}.title`}>{f.title}</h3>
+            <p class="mt-2.5 text-[14.5px] leading-relaxed text-gray-600" data-i18n={`globe.features.${f.key}.body`}>{f.body}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

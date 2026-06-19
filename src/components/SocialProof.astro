@@ -1,0 +1,49 @@
+---
+// Honest analogue of Cloudflare's "powers 42% of the Fortune 500" band.
+// No fabricated customers/testimonials — instead, the real technologies and
+// standards Origin's products interoperate with.
+const techs = [
+  'OAuth 2.0',
+  'OpenGL',
+  'Vulkan',
+  'DirectX',
+  'JVM',
+  'OpenID Connect',
+  'Origin Cloud',
+  'Origin Solide™',
+];
+
+const marqueeCopies = [0, 1];
+---
+
+<section class="blueprint relative overflow-hidden bg-white py-24">
+  <div class="container-x relative z-10 text-center" data-reveal>
+    <h2 class="h2">
+      <span data-i18n="social.title.line1">Six services.</span>
+      <br class="sm:hidden" />
+      <span data-i18n="social.title.line2">One Origin platform.</span>
+    </h2>
+    <p class="lead mx-auto mt-4 max-w-[520px]" data-i18n="social.lead">
+      Built to interoperate with the standards and runtimes you already ship on.
+    </p>
+  </div>
+
+  <!-- logo / tech marquee -->
+  <div class="marquee relative z-10 mt-14" style="--marquee-duration:36s;--marquee-gap:3.5rem">
+    <div class="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white to-transparent"></div>
+    <div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-white to-transparent"></div>
+    <div class="marquee-track">
+      {
+        marqueeCopies.map((copyIndex) => (
+          <ul class="marquee-set" aria-hidden={copyIndex > 0}>
+            {techs.map((t) => (
+              <li class="whitespace-nowrap text-[22px] font-bold tracking-tight text-gray-400">
+                {t}
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+</section>

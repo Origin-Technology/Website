@@ -1,0 +1,99 @@
+---
+import { Check } from 'lucide-react';
+
+// Origin doesn't publish public price points, so tiers use truthful
+// "Free" / "Contact us" calls-to-action rather than fabricated dollar amounts.
+const tiers = [
+  {
+    name: 'Free',
+    note: 'for hobby projects',
+    price: 'Free',
+    sub: 'no card required',
+    features: ['XenonAuth™ OAuth', 'Origin Pass', 'Community support'],
+    cta: 'Start building',
+    href: '#products',
+    featured: false,
+  },
+  {
+    name: 'Developer',
+    note: 'for production apps',
+    price: 'Contact',
+    sub: 'usage-based',
+    features: ['Everything in Free', 'Shield™ checks', 'Re-Sync™ acceleration', 'Email support'],
+    cta: 'Talk to us',
+    href: 'mailto:support@origin.pw',
+    featured: true,
+  },
+  {
+    name: 'Team',
+    note: 'for growing teams',
+    price: 'Contact',
+    sub: 'billed annually',
+    features: ['Everything in Developer', 'Solide™ obfuscation', 'Beacon™ telemetry', 'Priority support'],
+    cta: 'Talk to us',
+    href: 'mailto:support@origin.pw',
+    featured: false,
+  },
+  {
+    name: 'Enterprise',
+    note: 'for mission-critical',
+    price: 'Custom',
+    sub: 'tailored',
+    features: ['Origin Network™ priority', 'Custom SLAs', 'Dedicated contact', '24/7 support'],
+    cta: 'Contact sales',
+    href: 'mailto:support@origin.pw',
+    featured: false,
+  },
+];
+---
+
+<section id="pricing" class="blueprint relative overflow-hidden bg-gray-50 py-24">
+  <div class="container-x relative z-10">
+    <div class="mx-auto max-w-[640px] text-center" data-reveal>
+      <h2 class="h2">Tailored to your team</h2>
+      <p class="lead mx-auto mt-4">Easy to use for hobby projects and large platforms alike.</p>
+    </div>
+
+    <div class="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {
+        tiers.map((t) => (
+          <article
+            class={
+              'flex flex-col rounded-2xl border bg-white p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] ' +
+              (t.featured ? 'border-flare ring-1 ring-flare' : 'border-gray-200')
+            }
+            data-reveal
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="text-[18px] font-bold text-ink">{t.name}</h3>
+              {t.featured && (
+                <span class="rounded-full bg-flare px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
+                  Popular
+                </span>
+              )}
+            </div>
+            <p class="mt-0.5 text-[13px] text-gray-500">{t.note}</p>
+            <div class="mt-5">
+              <span class="text-[34px] font-extrabold tracking-tight text-ink">{t.price}</span>
+              <span class="ml-1.5 text-[13px] text-gray-500">{t.sub}</span>
+            </div>
+            <ul class="mt-5 flex flex-1 flex-col gap-2.5">
+              {t.features.map((f) => (
+                <li class="flex items-start gap-2 text-[13.5px] text-gray-700">
+                  <Check size={15} className="mt-0.5 flex-none text-flare" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={t.href}
+              class={'btn btn-sm mt-7 h-10 ' + (t.featured ? 'btn-flare' : 'btn-outline')}
+            >
+              {t.cta}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

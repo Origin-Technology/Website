@@ -1,0 +1,92 @@
+---
+import { ShieldCheck, GitBranch, Network, Check } from 'lucide-react';
+---
+
+<section class="blueprint relative overflow-hidden bg-white py-24">
+  <div class="container-x relative z-10">
+    <div class="mx-auto max-w-[640px] text-center" data-reveal>
+      <h2 class="h2" data-i18n="bento.title">Why choose Origin</h2>
+      <p class="lead mx-auto mt-4" data-i18n="bento.lead">Everything needed to build secure, performant applications.</p>
+    </div>
+
+    <!-- bento grid -->
+    <div class="mt-14 grid gap-4 lg:grid-cols-12" data-reveal-group>
+      <!-- secure by default -->
+      <article class="spotlight relative rounded-2xl border border-gray-200 bg-gray-50 p-8 lg:col-span-5" data-spotlight>
+        <div class="grid h-11 w-11 place-items-center rounded-xl bg-white text-flare shadow-[var(--shadow-soft)]">
+          <ShieldCheck size={22} />
+        </div>
+        <h3 class="mt-6 text-[20px] font-bold text-ink" data-i18n="bento.secure.title">Secure by default</h3>
+        <p class="mt-2.5 text-[14.5px] leading-relaxed text-gray-600" data-i18n="bento.secure.body">
+          Shield™ layered checks, Solide™ obfuscation, and integrity monitoring
+          run on every build from day one — no extra wiring required.
+        </p>
+      </article>
+
+      <!-- fast path / mockup terminal -->
+      <article class="spotlight relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:col-span-7" data-spotlight>
+        <h3 class="text-[20px] font-bold text-ink" data-i18n="bento.fast.title">Fast path to authentication</h3>
+        <p class="mt-2.5 max-w-[420px] text-[14.5px] leading-relaxed text-gray-600" data-i18n="bento.fast.body">
+          Drop in XenonAuth™ OAuth and Origin Pass. Identity-aware access and token
+          management make production sign-in a one-step deploy.
+        </p>
+        <!-- mock console -->
+        <div class="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-4 font-mono text-[12.5px]" data-seq>
+          <div class="flex items-center gap-2 text-flare" data-seq-item>
+            <span class="h-1.5 w-1.5 rounded-full bg-flare"></span>
+            <span data-i18n="bento.fast.console.ready">3 services initialised</span>
+          </div>
+          <div class="mt-2.5 space-y-1.5 text-gray-600">
+            <div class="flex justify-between" data-seq-item><span><span class="rounded bg-flare-tint px-1.5 py-0.5 text-flare-deep">xenon-auth</span> &rarr; <span data-i18n="bento.fast.console.oauth">oauth ready</span></span><span class="text-gray-400">128ms</span></div>
+            <div class="flex justify-between" data-seq-item><span><span class="rounded bg-flare-tint px-1.5 py-0.5 text-flare-deep">shield</span> &rarr; <span data-i18n="bento.fast.console.shield">checks passed</span></span><span class="text-gray-400">96ms</span></div>
+            <div class="flex justify-between" data-seq-item><span><span class="rounded bg-flare-tint px-1.5 py-0.5 text-flare-deep">re-sync</span> &rarr; <span data-i18n="bento.fast.console.resync">latency -38%</span></span><span class="text-gray-400">7ms</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- fits into workflows / deploy list -->
+      <article class="spotlight relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:col-span-7" data-spotlight>
+        <h3 class="text-[20px] font-bold text-ink" data-i18n="bento.workflow.title">Fits into your existing workflows</h3>
+        <p class="mt-2.5 text-[14.5px] leading-relaxed text-gray-600" data-i18n="bento.workflow.body">
+          OpenGL, Vulkan, DirectX, and any JVM toolchain. No proprietary tools or
+          vendor lock-in.
+        </p>
+        <div class="mt-6 overflow-hidden rounded-xl border border-gray-200" data-seq>
+          {
+            [
+              ['v30614', 'queued'],
+              ['v30613', 'deployed'],
+              ['v30612', 'deployed'],
+            ].map(([v, status], i) => (
+              <div class={'flex items-center justify-between px-4 py-2.5 text-[13px] ' + (i === 0 ? 'bg-flare-tint/60' : 'bg-white') + (i < 2 ? ' border-b border-gray-100' : '')} data-seq-item>
+                <span class="font-mono text-flare-deep">{v}</span>
+                <span class="text-gray-400"><span data-i18n="bento.workflow.updated">Updated</span> 05.31.26</span>
+                <span class={'inline-flex items-center gap-1.5 font-medium ' + (status === 'queued' ? 'text-gray-500' : 'text-flare')}>
+                  {status !== 'queued' && <Check size={14} />}
+                  <span data-i18n={`bento.workflow.status.${status}`}>{status === 'queued' ? 'Queued' : 'Deployed'}</span>
+                </span>
+              </div>
+            ))
+          }
+        </div>
+        <div class="mt-5 flex items-center gap-2 text-[13px] text-gray-500">
+          <GitBranch size={15} /> <span data-i18n="bento.workflow.tooling">Git · CI · any framework</span>
+        </div>
+      </article>
+
+      <!-- one network (brand) -->
+      <article class="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-flare p-8 text-white lg:col-span-5">
+        <div class="grid h-11 w-11 place-items-center rounded-xl bg-white/15">
+          <Network size={22} />
+        </div>
+        <div class="mt-10">
+          <h3 class="text-[20px] font-bold" data-i18n="bento.network.title">One network for users, apps, and data</h3>
+          <p class="mt-2.5 text-[14.5px] leading-relaxed text-white/90" data-i18n="bento.network.body">
+            Whether you're shipping code, securing sign-in, or accelerating frames,
+            it all runs on Origin Network™ — managed from one place.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

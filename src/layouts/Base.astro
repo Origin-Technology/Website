@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Origin Technology — Open. Innovation. Powerful.',
+  description = 'Origin Technology: authentication, application protection, and performance services. Open. Innovation. Powerful.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      (() => {
+        try {
+          const saved = localStorage.getItem('origin.lang');
+          const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+          const auto = langs.some((item) => item?.toLowerCase().startsWith('zh')) ? 'zh' : 'en';
+          const lang = saved === 'zh' || saved === 'en' ? saved : auto;
+          document.documentElement.dataset.langCandidate = lang;
+          if (lang === 'zh') {
+            document.documentElement.classList.add('i18n-pending');
+            window.setTimeout(() => document.documentElement.classList.remove('i18n-pending'), 3000);
+          }
+        } catch {
+          const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+          const auto = langs.some((item) => item?.toLowerCase().startsWith('zh')) ? 'zh' : 'en';
+          document.documentElement.dataset.langCandidate = auto;
+          if (auto === 'zh') {
+            document.documentElement.classList.add('i18n-pending');
+            window.setTimeout(() => document.documentElement.classList.remove('i18n-pending'), 3000);
+          }
+        }
+      })();
+    </script>
+    <title data-i18n="meta.title">{title}</title>
+    <meta
+      name="description"
+      content={description}
+      data-i18n-content="meta.description"
+    />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import '../scripts/scroll.ts';
+      import '../scripts/i18n.ts';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   Origin Technology — faithful Cloudflare homepage system.
+   Pill buttons · flare-orange cards · blueprint dashed frame.
+   ============================================================ */
+@theme {
+  /* Brand — sampled from the Origin logo (cyan → teal gradient) */
+  --color-flare: #14a8d0;          /* primary brand (button fills, dots) */
+  --color-flare-hot: #22ccdf;      /* hero card top (bright cyan) */
+  --color-flare-deep: #0e7ba6;     /* text / hover (deep teal-blue) */
+  --color-flare-glow: #8eecf2;     /* sunrise glow (light cyan) */
+  --color-flare-soft: #4ccfe6;
+  --color-flare-tint: #e2f6fb;
+  --color-flare-line: #a6e2ee;     /* faint cyan dotted globe */
+
+  /* Cloudflare neutral ramp (near-black ink, cool light grays) */
+  --color-ink: #0a0a0a;
+  --color-graphite: #313131;
+  --color-gray-700: #4b4b4b;
+  --color-gray-600: #6a6a6a;
+  --color-gray-500: #808284;
+  --color-gray-400: #a3a5a7;
+  --color-gray-300: #d6d8d9;
+  --color-gray-200: #e7e8e9;
+  --color-gray-100: #f3f4f4;
+  --color-gray-50: #fafbfb;
+
+  --font-sans:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+  --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.07);
+  --shadow-lift: 0 18px 48px rgba(0, 0, 0, 0.12);
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  html.i18n-pending body {
+    visibility: hidden;
+  }
+  body {
+    @apply bg-white text-ink antialiased;
+    font-family: var(--font-sans);
+    letter-spacing: -0.011em;
+  }
+  ::selection {
+    background: var(--color-flare);
+    color: #fff;
+  }
+}
+
+@layer components {
+  /* page shell ---------------------------------------------------------- */
+  .container-x {
+    @apply mx-auto w-full max-w-[1180px] px-6;
+  }
+
+  /* Cloudflare's signature blueprint frame: dashed vertical rails on the
+     sides with a faint dotted gutter texture behind them. */
+  .blueprint {
+    position: relative;
+  }
+  .blueprint::before,
+  .blueprint::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    border-left: 1px dashed var(--color-gray-300);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .blueprint::before { left: max(24px, calc(50% - 590px)); }
+  .blueprint::after { right: max(24px, calc(50% - 590px)); }
+
+  .dotted-gutter {
+    background-image: radial-gradient(var(--color-gray-300) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  /* crosshair corner mark used on framed mockups */
+  .crosshair::before {
+    content: '+';
+    position: absolute;
+    color: var(--color-gray-400);
+    font-size: 16px;
+    line-height: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  /* type ---------------------------------------------------------------- */
+  .display {
+    @apply font-extrabold tracking-[-0.03em] text-ink;
+    line-height: 1.05;
+  }
+  .h2 {
+    @apply text-[clamp(30px,4.4vw,52px)] font-extrabold tracking-[-0.03em] text-ink;
+    line-height: 1.08;
+  }
+  .lead {
+    @apply text-[18px] leading-relaxed text-gray-600;
+  }
+  .eyebrow {
+    @apply text-[13px] font-bold uppercase tracking-[0.08em] text-flare;
+  }
+
+  /* pill buttons (Cloudflare style: fully rounded) ---------------------- */
+  .btn {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-full px-7 text-[15px] font-semibold transition-all duration-150 active:translate-y-px;
+  }
+  .btn-sm {
+    @apply h-9 px-4 text-[14px];
+  }
+  .btn-dark {
+    @apply bg-ink text-white hover:bg-graphite;
+  }
+  .btn-flare {
+    @apply bg-flare text-white hover:bg-flare-deep;
+  }
+  .btn-white {
+    @apply bg-white text-ink shadow-[var(--shadow-soft)] hover:bg-gray-100;
+  }
+  .btn-outline {
+    @apply border border-gray-300 bg-white text-ink hover:border-ink;
+  }
+  .btn-outline-light {
+    @apply border border-white/55 bg-transparent text-white hover:border-white hover:bg-white/10;
+  }
+  .lang-switch {
+    @apply inline-flex h-8 min-w-9 items-center justify-center rounded-md px-2 text-[12px] font-semibold text-gray-500 transition;
+  }
+  .lang-switch[aria-pressed='true'] {
+    @apply bg-flare text-white;
+  }
+  .link-arrow {
+    @apply inline-flex items-center gap-1.5 font-semibold text-flare;
+  }
+  .link-arrow svg { @apply transition-transform duration-150; }
+  .link-arrow:hover svg { @apply translate-x-1; }
+
+  /* bright feature card (hero + build-cta) ------------------------------ */
+  .flare-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    isolation: isolate;
+    background: var(--color-flare);
+    box-shadow: inset 0 0 0 rgba(142, 236, 242, 0);
+    transition: box-shadow 1.2s ease-out;
+  }
+  .flare-card.is-lit {
+    box-shadow:
+      inset 0 -90px 160px rgba(14, 123, 166, 0.42),
+      inset 0 -26px 88px rgba(142, 236, 242, 0.42),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  }
+  /* dotted texture overlay */
+  .flare-card-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.16) 1px, transparent 1px);
+    background-size: 14px 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.95s ease-out 0.2s;
+  }
+  .flare-card-texture.is-lit::before {
+    opacity: 1;
+  }
+  /* bottom light source */
+  .flare-card-glow::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -46%;
+    z-index: 0;
+    width: min(940px, 96%);
+    height: 86%;
+    transform: translate(-50%, 28%) scale(0.42);
+    background:
+      radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.78) 0%,
+        var(--color-flare-glow) 17%,
+        rgba(34, 204, 223, 0.46) 42%,
+        rgba(20, 168, 208, 0) 72%
+      );
+    filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 1s ease-out 0.16s,
+      transform 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.16s;
+    will-change: opacity, transform;
+  }
+  .flare-card-glow.is-lit::after {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 1;
+  }
+
+  .marquee {
+    --marquee-duration: 32s;
+    --marquee-gap: 2.5rem;
+    overflow: hidden;
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee var(--marquee-duration) linear infinite;
+    will-change: transform;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  .marquee-set {
+    display: flex;
+    flex: 0 0 auto;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--marquee-gap);
+    padding-right: var(--marquee-gap);
+  }
+}
+
+@layer utilities {
+  .reveal { opacity: 0; transform: translateY(28px); will-change: transform, opacity; }
+
+  /* Pointer-tracking spotlight sheen on cards. JS sets --mx/--my; the radial
+     highlight only shows on hover. Falls back to nothing without JS. */
+  .spotlight {
+    position: relative;
+  }
+  .spotlight::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      220px circle at var(--mx, 50%) var(--my, 0%),
+      color-mix(in srgb, var(--color-flare) 14%, transparent),
+      transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+  }
+  .spotlight:hover::after {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spotlight::after { display: none; }
+    .marquee-track {
+      animation: none;
+      transform: none;
+    }
+  }
+}

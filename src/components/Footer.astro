@@ -1,0 +1,98 @@
+---
+import { passUrl, solideUrl } from '../data/content';
+
+const year = 2025;
+const isExternalLink = (href: string) => /^https?:\/\//.test(href);
+
+const columns = [
+  {
+    title: 'Getting started',
+    links: [
+      { label: 'Start building', href: '#products' },
+      { label: 'Contact us', href: 'mailto:support@origin.pw' },
+      { label: 'Developer Status', href: '/status.html' },
+    ],
+  },
+  {
+    title: 'Products',
+    links: [
+      { label: 'Origin XenonAuth™', href: '/xenon-auth.html' },
+      { label: 'Origin Shield™', href: '/shield.html' },
+      { label: 'Origin Re-Sync™', href: '/re-sync.html' },
+      { label: 'Origin Solide™', href: solideUrl },
+      { label: 'Origin Beacon™', href: '/beacon.html' },
+      { label: 'Origin Network™', href: '/network.html' },
+    ],
+  },
+  {
+    title: 'Solutions',
+    links: [
+      { label: 'Authenticate', href: '#pillars' },
+      { label: 'Protect', href: '#pillars' },
+      { label: 'Accelerate', href: '#pillars' },
+      { label: 'Origin Pass', href: passUrl },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'About the team', href: '#team' },
+      { label: 'Origin Cloud', href: '/network.html' },
+      { label: 'QQ Group Chat', href: '#' },
+      { label: 'Email', href: 'mailto:support@origin.pw' },
+    ],
+  },
+];
+---
+
+<footer class="blueprint relative border-t border-gray-200 bg-white pb-10 pt-16">
+  <div class="container-x relative z-10">
+    <div class="grid gap-10 lg:grid-cols-[1.3fr_3fr]">
+      <div>
+        <a href="/" class="flex items-center gap-2.5">
+          <img src="/icon.svg" alt="" aria-hidden="true" class="h-[30px] w-[30px]" />
+          <span class="text-[19px] font-extrabold tracking-[0.04em] text-ink">ORIGIN</span>
+        </a>
+        <p class="mt-4 text-[14px] text-gray-500" data-i18n="footer.slogan">Open. Innovation. Powerful.</p>
+        <p class="mt-4 text-[14px] text-gray-500">
+          <span data-i18n="footer.supportPrefix">For support, contact</span>
+          <a href="mailto:support@origin.pw" class="font-medium text-flare">support@origin.pw</a>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+        {
+          columns.map((col, colIndex) => (
+            <div>
+              <h4 class="mb-4 text-[13px] font-bold text-ink" data-i18n={`footer.columns.${colIndex}.title`}>{col.title}</h4>
+              <ul class="flex flex-col gap-2.5">
+                {col.links.map((l, linkIndex) => (
+                  <li>
+                    <a
+                      href={l.href}
+                      target={isExternalLink(l.href) ? '_blank' : undefined}
+                      rel={isExternalLink(l.href) ? 'noopener noreferrer' : undefined}
+                      class="text-[14px] text-gray-500 transition hover:text-flare"
+                      data-i18n={`footer.columns.${colIndex}.links.${linkIndex}`}
+                    >
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-wrap items-center justify-between gap-3 border-t border-gray-200 pt-6 text-[13px] text-gray-400">
+      <p data-i18n="footer.copyright" data-year={year}>Copyright © 2022-{year} Origin Technology</p>
+      <div class="flex gap-5">
+        <a href="#" class="transition hover:text-ink" data-i18n="footer.legal.privacy">Privacy</a>
+        <a href="#" class="transition hover:text-ink" data-i18n="footer.legal.terms">Terms</a>
+        <a href="/status.html" class="transition hover:text-ink" data-i18n="footer.legal.status">Status</a>
+      </div>
+    </div>
+  </div>
+</footer>
